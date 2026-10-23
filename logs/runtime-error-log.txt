@@ -1,0 +1,73 @@
+RUNTIME / BUILD ERROR LOG
+=========================
+
+Project : my-app (Faleel H portfolio)
+Date    : 2026-10-23
+Stack   : Next.js 16.4.2 (App Router, Turbopack), React 19.3.0,
+          TypeScript, Tailwind CSS v4, GSAP 3.15
+
+SUMMARY
+-------
+No runtime exceptions occurred during the development smoke test or the
+production build. The only issue found was a non-fatal Turbopack root
+warning during the first build, which was fixed.
+
+VERIFICATION RUNS
+-----------------
+1) TypeScript check
+   Command : bunx tsc --noEmit
+   Result  : exit 0, no type errors
+
+2) Lint
+   Command : bun run lint
+   Result  : LINT_EXIT=0, no lint warnings/errors
+
+3) Production build
+   Command : bun run build
+   Result  : compiled successfully, static route "/" generated
+
+4) Development server smoke test
+   Command : bunx next dev -p 3101
+   Result  : Ready in 2.5s, GET / 200, HTML_LENGTH=198319
+   Checks  : rendered HTML contained:
+             - "Faleel H"
+             - "RAG Enterprise Knowledge Assistant"
+             - "Cinematic dev workspace" (footer image block)
+
+ISSUE ENCOUNTERED AND FIX
+-------------------------
+Issue:
+  First build printed this warning:
+  "Warning: Next.js ignored package-lock.json in C:\Users\hfale because it
+   is outside the current Git repository ... To use this directory, set
+   `turbopack.root` in your Next.js config."
+
+Root cause:
+  Turbopack auto-detected a package-lock.json in the parent user directory
+  (C:\Users\hfale) while resolving the workspace root. That made the
+  detected root ambiguous and outside the project.
+
+Fix:
+  Added an explicit Turbopack root in next.config.ts:
+      turbopack: { root: process.cwd(), ... }
+  Rebuilt with bun run build. The warning is gone and the build still
+  completes successfully.
+
+Files changed for the fix:
+  - next.config.ts
+
+RUNTIME NOTES
+-------------
+- Source images were copied from Context/img-for-web-app into:
+    public/images/faleel-h.png
+    public/images/developer-workspace.png
+    public/images/projects/rag-enterprise-dashboard.png
+    public/images/projects/sss-autospares.jpeg
+  They are served through next/image (optimized, sized, lazy/preloaded
+  where appropriate).
+- GSAP + ScrollTrigger are loaded with dynamic imports inside useEffect
+  so nothing touches window during server rendering. Cleanup calls
+  gsap context.revert() and removes listeners.
+- Animations respect prefers-reduced-motion.
+- This is a static portfolio with no server actions or database calls,
+  so there are no API/runtime data failures to report.
