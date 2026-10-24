@@ -63,7 +63,7 @@ export function SiteFooter() {
                 <LinkedinIcon className="size-4" />
               </a>
               <a
-                href="https://github.com/"
+                href="https://github.com/soloStack-Dev"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Faleel H on GitHub"

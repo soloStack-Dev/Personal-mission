@@ -148,7 +148,7 @@ export const projects: Project[] = [
     links: [
       {
         label: "GitHub Repository",
-        href: "https://github.com/",
+        href: "https://github.com/soloStack-Dev/Rag_webapp.git",
         external: true,
         icon: "github",
       },
@@ -186,6 +186,12 @@ export const projects: Project[] = [
         href: "https://www.sssautospare.com/",
         external: true,
         icon: "external",
+      },
+      {
+        label: "GitHub Repository",
+        href: "https://github.com/soloStack-Dev/sss-autosphere.git",
+        external: true,
+        icon: "github",
       },
       {
         label: "Request Case Study",
