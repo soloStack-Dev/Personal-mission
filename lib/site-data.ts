@@ -200,6 +200,58 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    number: "03",
+    title: "Aurelle Female Dress",
+    category: "Fashion E-Commerce",
+    year: "2026",
+    description:
+      "A cinematic fashion e-commerce storefront concept designed around premium women's fashion, editorial storytelling, and immersive shopping experiences. Built with modern web technologies, featuring interactive product collections, animated 3D visuals, dynamic product previews, and a sophisticated luxury-inspired design.",
+    features: [
+      "Interactive fashion collections and product catalog",
+      "Product filtering, price sorting, and quick-view previews",
+      "Shopping bag and wishlist interactions",
+      "Immersive 3D hero visuals and scroll-triggered animations",
+      "Editorial fashion journal and brand storytelling",
+      "Membership pricing and contact enquiry pages",
+      "Responsive design, accessibility, and SEO optimization",
+    ],
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "Three.js",
+      "GSAP",
+      "Lenis",
+      "Motion",
+      "anime.js",
+      "Zustand",
+      "Leaflet",
+      "Vercel",
+    ],
+    image: "/images/projects/aurelle-female-dress.png",
+    imageAlt: "Aurelle Female Dress cinematic fashion storefront preview",
+    links: [
+      {
+        label: "Live Website",
+        href: "https://aurelle-female-dress-all-in-one.vercel.app/",
+        external: true,
+        icon: "external",
+      },
+      {
+        label: "GitHub Repository",
+        href: "https://github.com/soloStack-Dev/Aurelle_female_dress_all_in_one.git",
+        external: true,
+        icon: "github",
+      },
+      {
+        label: "Request Case Study",
+        href: "mailto:faleelmr4@gmail.com?subject=Aurelle%20Female%20Dress%20Case%20Study",
+        icon: "mail",
+      },
+    ],
+  },
 ];
 
 export const education = {
