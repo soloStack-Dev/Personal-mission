@@ -6,6 +6,7 @@ import { Hero } from "@/components/portfolio/hero";
 import { Navbar } from "@/components/portfolio/navbar";
 import { Process } from "@/components/portfolio/process";
 import { Projects } from "@/components/portfolio/projects";
+import { SellingPlatform } from "@/components/portfolio/selling-platform";
 import { ScrollAnimations } from "@/components/portfolio/scroll-animations";
 import { TechArsenal } from "@/components/portfolio/tech-arsenal";
 
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <TechArsenal />
         <Projects />
+        <SellingPlatform />
         <Credentials />
         <Process />
         <Contact />

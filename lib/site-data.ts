@@ -252,45 +252,6 @@ export const projects: Project[] = [
       },
     ],
   },
-  {
-    number: "04",
-    title: "Personal Selling Source",
-    category: "Web Studio / Portfolio",
-    year: "2026",
-    description:
-      "A personal web studio platform showcasing sellable website templates and client work with editorial design, project galleries, pricing packages, and a streamlined enquiry flow via WhatsApp integration.",
-    features: [
-      "Editorial portfolio with project case studies",
-      "Sellable website templates showcase",
-      "Service packages and transparent pricing",
-      "WhatsApp-integrated enquiry flow",
-      "AI smart features and chatbot support",
-      "Responsive design with GSAP animations",
-    ],
-    stack: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "GSAP",
-      "Lenis",
-    ],
-    image: "/images/projects/aurelle-female-dress.png",
-    imageAlt: "Personal Selling Source web studio platform preview",
-    links: [
-      {
-        label: "Live Website",
-        href: "https://personal-selling-source.vercel.app/",
-        external: true,
-        icon: "external",
-      },
-      {
-        label: "Request Case Study",
-        href: "mailto:faleelmr4@gmail.com?subject=Personal%20Selling%20Source%20Case%20Study",
-        icon: "mail",
-      },
-    ],
-  },
 ];
 
 export const education = {
