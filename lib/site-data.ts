@@ -252,6 +252,54 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    number: "04",
+    title: "Cortex",
+    category: "Real-Time Chat App",
+    year: "2026",
+    description:
+      "A real-time multilingual chat app where every message is translated into the author's selected language. One shared room, five Indian languages — no copy-paste or language silos. Features live presence, room locks, invite links, Markdown export, and local account management.",
+    features: [
+      "Multilingual rooms (English, Tamil, Malayalam, Kannada, Telugu)",
+      "Author-led translation with Sarvam Mayura",
+      "Real-time messaging over WebSocket",
+      "Room locks with hashed 4-digit passwords",
+      "Live presence and invite links",
+      "Markdown export and account workspace",
+    ],
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Bun",
+      "WebSocket",
+      "Sarvam Mayura",
+      "GSAP",
+      "Lenis",
+    ],
+    image: "/images/projects/cortex-chat.png",
+    imageAlt: "Cortex real-time multilingual chat app preview",
+    links: [
+      {
+        label: "Live Website",
+        href: "https://chat-web-app-nine-dusky.vercel.app/",
+        external: true,
+        icon: "external",
+      },
+      {
+        label: "GitHub Repository",
+        href: "https://github.com/soloStack-Dev/Chat_web_app.git",
+        external: true,
+        icon: "github",
+      },
+      {
+        label: "Request Case Study",
+        href: "mailto:faleelmr4@gmail.com?subject=Cortex%20Chat%20App%20Case%20Study",
+        icon: "mail",
+      },
+    ],
+  },
 ];
 
 export const education = {
