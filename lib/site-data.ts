@@ -2,7 +2,7 @@ export const site = {
   name: "Faleel H",
   displayName: "FALEEL H",
   handle: "thequitesch1ar__",
-  role: "Java Developer & AI Engineer",
+  role: "AI Full Stack Developer",
   location: "Thiruvarur, Tamil Nadu, India",
   email: "faleelmr4@gmail.com",
   phone: "+91 97909 33818",
@@ -11,7 +11,7 @@ export const site = {
   linkedinHref: "https://www.linkedin.com/in/faleel-h-b772a1416/",
   availability: "Open to work",
   summary:
-    "BCA graduate specializing in Spring Boot, RAG applications, and enterprise backend development.",
+    "BCA graduate specializing in Full Stack Application, RAG applications, and AI Implementations.",
 };
 
 export const navLinks = [
@@ -38,16 +38,15 @@ export const skillGroups: SkillGroup[] = [
   {
     command: "languages --list",
     label: "Languages",
-    items: ["Java", "SQL", "HTMX"],
+    items: ["Nuxt js", "Vue", "SQL", "Javascript". "Typescript"],
   },
   {
     command: "backend --list",
     label: "Backend",
     items: [
-      "Spring Boot",
-      "Spring AI",
+      "Express js",
       "REST APIs",
-      "Spring Data JPA",
+      "Drizzle ORM",
       "WebSocket",
       "Nginx",
     ],
@@ -56,7 +55,7 @@ export const skillGroups: SkillGroup[] = [
     command: "ai-rag --list",
     label: "AI & RAG",
     items: [
-      "Spring AI",
+      "MCP",
       "RAG",
       "Generative AI",
       "Embeddings",
@@ -72,27 +71,31 @@ export const skillGroups: SkillGroup[] = [
   {
     command: "frontend --list",
     label: "Frontend",
-    items: ["HTMX", "CSS3", "Tailwind CSS", "Thymeleaf"],
+    items: ["Nuxt js", "Vue", "Tailwind CSS", "HTMX", "UI Frameworks", "Pinia", "Tanstack Query"],
   },
   {
     command: "devops --list",
     label: "DevOps",
-    items: ["Git", "GitHub", "Docker", "Maven", "JUnit"],
+    items: ["Git", "GitHub", "Docker", "Vitest", "Unit Testing jest"],
   },
 ];
 
-export const codeSnippet = `public class Developer {
-  private final String name = "Faleel H";
-  private final String role = "Java Developer & AI Engineer";
-  private final String[] focus = { "Spring Boot", "Spring AI", "RAG" };
-  private final boolean openToWork = true;
+export const codeSnippet = `export class Developer {
+  private readonly name: string = "Faleel H";
+  private readonly role: string = "AI Full Stack Developer";
+  private readonly focus: string[] = ["Nuxt", "Vue", "Typescript", "Javascript"];
+  private readonly openToWork: boolean = true;
 
-  public String build(String problem) {
-    return architect(problem)
-        .develop()
-        .integrate()
-        .test()
-        .deploy();
+  public build(problem: string): string {
+    return this.architect(problem)
+      .develop()
+      .integrate()
+      .test()
+      .deploy();
+  }
+
+  private architect(problem: string): ArchitecturePipeline {
+    return new ArchitecturePipeline(problem);
   }
 }`;
 
@@ -169,11 +172,12 @@ export const projects: Project[] = [
       "Responsive, image-optimized pages",
     ],
     stack: [
-      "Next.js",
+      "Nuxt",
       "TypeScript",
       "GSAP",
       "Material UI",
       "tRPC",
+      "Pinia",
       "Supabase",
       "PostgreSQL",
       "Vercel",
@@ -217,8 +221,8 @@ export const projects: Project[] = [
       "Responsive design, accessibility, and SEO optimization",
     ],
     stack: [
-      "Next.js",
-      "React",
+      "Nuxt",
+      "Vue",
       "TypeScript",
       "Tailwind CSS v4",
       "Three.js",
@@ -226,7 +230,8 @@ export const projects: Project[] = [
       "Lenis",
       "Motion",
       "anime.js",
-      "Zustand",
+      "Pinia",
+      "Tanstack Query",
       "Leaflet",
       "Vercel",
     ],
@@ -268,8 +273,10 @@ export const projects: Project[] = [
       "Markdown export and account workspace",
     ],
     stack: [
-      "Next.js",
-      "React",
+      "Nuxt",
+      "Vue",
+      "Pinia",
+      "Tanstack Query",
       "TypeScript",
       "Tailwind CSS",
       "Bun",
