@@ -5,63 +5,79 @@ import { codeSnippet, skillGroups } from "@/lib/site-data";
 
 const codeLines: ReactNode[] = [
   <>
-    <span className="text-code-red">public</span>{" "}
+    <span className="text-code-red">export</span>{" "}
     <span className="text-code-red">class</span>{" "}
     <span className="text-code-yellow">Developer</span> {"{"}
   </>,
   <>
     {"  "}
-    <span className="text-code-red">private final</span>{" "}
-    <span className="text-code-blue">String</span> name ={" "}
+    <span className="text-code-red">private readonly</span> name:{" "}
+    <span className="text-code-blue">string</span> ={" "}
     <span className="text-code-green">&quot;Faleel H&quot;</span>;
   </>,
   <>
     {"  "}
-    <span className="text-code-red">private final</span>{" "}
-    <span className="text-code-blue">String</span> role ={" "}
+    <span className="text-code-red">private readonly</span> role:{" "}
+    <span className="text-code-blue">string</span> ={" "}
     <span className="text-code-green">
-      &quot;Java Developer &amp; AI Engineer&quot;
+      &quot;AI Full Stack Developer&quot;
     </span>
     ;
   </>,
   <>
     {"  "}
-    <span className="text-code-red">private final</span>{" "}
-    <span className="text-code-blue">String[]</span> focus = {"{"}{" "}
-    <span className="text-code-green">&quot;Spring Boot&quot;</span>,{" "}
-    <span className="text-code-green">&quot;Spring AI&quot;</span>,{" "}
-    <span className="text-code-green">&quot;RAG&quot;</span> {"}"};
+    <span className="text-code-red">private readonly</span> focus:{" "}
+    <span className="text-code-blue">string[]</span> = [
+    <span className="text-code-green">&quot;Nuxt&quot;</span>,{" "}
+    <span className="text-code-green">&quot;Vue&quot;</span>,{" "}
+    <span className="text-code-green">&quot;Typescript&quot;</span>,{" "}
+    <span className="text-code-green">&quot;Javascript&quot;</span>];
   </>,
   <>
     {"  "}
-    <span className="text-code-red">private final</span>{" "}
-    <span className="text-code-blue">boolean</span> openToWork ={" "}
+    <span className="text-code-red">private readonly</span> openToWork:{" "}
+    <span className="text-code-blue">boolean</span> ={" "}
     <span className="text-code-yellow">true</span>;
   </>,
   <>&nbsp;</>,
   <>
     {"  "}
     <span className="text-code-red">public</span>{" "}
-    <span className="text-code-blue">String</span>{" "}
-    <span className="text-code-yellow">build</span>(
-    <span className="text-code-blue">String</span> problem) {"{"}
+    <span className="text-code-yellow">build</span>(problem:{" "}
+    <span className="text-code-blue">string</span>):{" "}
+    <span className="text-code-blue">string</span> {"{"}
+  </>,
+  <>
+    {"    "}
+    <span className="text-code-red">return</span> this.
+    <span className="text-code-yellow">architect</span>(problem)
+  </>,
+  <>
+    {"      "}.<span className="text-code-yellow">develop</span>()
+  </>,
+  <>
+    {"      "}.<span className="text-code-yellow">integrate</span>()
+  </>,
+  <>
+    {"      "}.<span className="text-code-yellow">test</span>()
+  </>,
+  <>
+    {"      "}.<span className="text-code-yellow">deploy</span>();
+  </>,
+  <>{"  }"}</>,
+  <>&nbsp;</>,
+  <>
+    {"  "}
+    <span className="text-code-red">private</span>{" "}
+    <span className="text-code-yellow">architect</span>(problem:{" "}
+    <span className="text-code-blue">string</span>):{" "}
+    <span className="text-code-blue">ArchitecturePipeline</span> {"{"}
   </>,
   <>
     {"    "}
     <span className="text-code-red">return</span>{" "}
-    <span className="text-code-yellow">architect</span>(problem)
-  </>,
-  <>
-    {"        "}.<span className="text-code-yellow">develop</span>()
-  </>,
-  <>
-    {"        "}.<span className="text-code-yellow">integrate</span>()
-  </>,
-  <>
-    {"        "}.<span className="text-code-yellow">test</span>()
-  </>,
-  <>
-    {"        "}.<span className="text-code-yellow">deploy</span>();
+    <span className="text-code-red">new</span>{" "}
+    <span className="text-code-blue">ArchitecturePipeline</span>(problem);
   </>,
   <>{"  }"}</>,
   <>{"}"}</>,
