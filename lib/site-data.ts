@@ -38,7 +38,7 @@ export const skillGroups: SkillGroup[] = [
   {
     command: "languages --list",
     label: "Languages",
-    items: ["Nuxt js", "Vue", "SQL", "Javascript". "Typescript"],
+    items: ["Nuxt js", "Vue", "SQL", "Javascript", "Typescript"],
   },
   {
     command: "backend --list",
