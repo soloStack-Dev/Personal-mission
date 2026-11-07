@@ -74,6 +74,11 @@ export const skillGroups: SkillGroup[] = [
     items: ["Nuxt js", "Vue", "Tailwind CSS", "HTMX", "UI Frameworks", "Pinia", "Tanstack Query"],
   },
   {
+    command: "Full Stack --list",
+    label: "Full Stack",
+    items: ["Nuxt js"],
+  },
+  {
     command: "devops --list",
     label: "DevOps",
     items: ["Git", "GitHub", "Docker", "Vitest", "Unit Testing jest"],
