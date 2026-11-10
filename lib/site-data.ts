@@ -38,7 +38,7 @@ export const skillGroups: SkillGroup[] = [
   {
     command: "languages --list",
     label: "Languages",
-    items: ["Nuxt js", "Vue", "SQL", "Javascript", "Typescript"],
+    items: ["Next js", "React", "SQL", "Javascript", "Typescript", "Python(AI)"],
   },
   {
     command: "backend --list",
@@ -49,6 +49,7 @@ export const skillGroups: SkillGroup[] = [
       "Drizzle ORM",
       "WebSocket",
       "Nginx",
+      "Python and Fast API (AI api Implementation)"
     ],
   },
   {
@@ -61,22 +62,23 @@ export const skillGroups: SkillGroup[] = [
       "Embeddings",
       "Vector Search",
       "LLM",
+      "Context and Prompt Engineering",
     ],
   },
   {
     command: "database --list",
     label: "Database",
-    items: ["MySQL", "Redis", "Chroma Vector Database"],
+    items: ["MySQL", "Redis", "Chroma Vector Database", "PostgreSQL", "Supabase"],
   },
   {
     command: "frontend --list",
     label: "Frontend",
-    items: ["Nuxt js", "Vue", "Tailwind CSS", "HTMX", "UI Frameworks", "Pinia", "Tanstack Query"],
+    items: ["Next js", "React", "Tailwind CSS", "HTMX", "UI Frameworks", "Zustand", "Tanstack Query"],
   },
   {
     command: "Full Stack --list",
     label: "Full Stack",
-    items: ["Nuxt js"],
+    items: ["Next js"],
   },
   {
     command: "devops --list",
@@ -88,7 +90,7 @@ export const skillGroups: SkillGroup[] = [
 export const codeSnippet = `export class Developer {
   private readonly name: string = "Faleel H";
   private readonly role: string = "AI Full Stack Developer";
-  private readonly focus: string[] = ["Nuxt", "Vue", "Typescript", "Javascript"];
+  private readonly focus: string[] = ["Next js", "React", "Typescript", "Javascript", "Tanstack Query", "Zustand"];
   private readonly openToWork: boolean = true;
 
   public build(problem: string): string {
@@ -177,12 +179,12 @@ export const projects: Project[] = [
       "Responsive, image-optimized pages",
     ],
     stack: [
-      "Nuxt",
+      "Next js",
       "TypeScript",
       "GSAP",
       "Material UI",
       "tRPC",
-      "Pinia",
+      "Zustand",
       "Supabase",
       "PostgreSQL",
       "Vercel",
@@ -226,8 +228,8 @@ export const projects: Project[] = [
       "Responsive design, accessibility, and SEO optimization",
     ],
     stack: [
-      "Nuxt",
-      "Vue",
+      "Next js",
+      "React",
       "TypeScript",
       "Tailwind CSS v4",
       "Three.js",
@@ -235,7 +237,7 @@ export const projects: Project[] = [
       "Lenis",
       "Motion",
       "anime.js",
-      "Pinia",
+      "Zustand",
       "Tanstack Query",
       "Leaflet",
       "Vercel",
@@ -278,9 +280,9 @@ export const projects: Project[] = [
       "Markdown export and account workspace",
     ],
     stack: [
-      "Nuxt",
-      "Vue",
-      "Pinia",
+      "Next js",
+      "React",
+      "Zustand",
       "Tanstack Query",
       "TypeScript",
       "Tailwind CSS",
