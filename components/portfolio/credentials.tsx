@@ -7,7 +7,7 @@ export function Credentials() {
     <section id="credentials" className="border-b border-line bg-background">
       <div className="mx-auto max-w-[1200px] px-6 py-20 md:px-10 md:py-24 lg:py-32">
         <SectionHeading
-          index="03"
+          index="05"
           command="credentials --verify"
           title="Education & Certifications"
           description="A computer applications foundation paired with focused, current training in generative AI, MCP, and modern AI-assisted development."

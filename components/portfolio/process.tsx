@@ -24,7 +24,7 @@ export function Process() {
       <section id="process" className="border-b border-line bg-background">
         <div className="mx-auto max-w-[1200px] px-6 py-20 md:px-10 md:py-24 lg:py-32">
           <SectionHeading
-            index="04"
+            index="06"
             command="workflow --run"
             title="How I Build"
             description="A repeatable delivery process — from architecture and implementation to integration, testing, and a production-ready deploy."

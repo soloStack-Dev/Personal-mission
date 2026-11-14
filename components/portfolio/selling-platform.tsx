@@ -7,7 +7,7 @@ export function SellingPlatform() {
     <section id="templates" className="border-b border-line bg-background">
       <div className="mx-auto max-w-[1200px] px-6 py-20 md:px-10 md:py-24 lg:py-32">
         <SectionHeading
-          index="03"
+          index="04"
           command="platform --selling"
           title="Web Templates & Selling Platform"
           description="A platform built to showcase and sell ready-made website templates. Browse live demos, pricing, and get started with production-ready templates."

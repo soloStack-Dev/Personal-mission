@@ -53,7 +53,7 @@ export function Contact() {
 
       <div className="relative z-10 mx-auto max-w-[1200px] px-6 py-20 md:px-10 md:py-24 lg:py-32">
         <SectionHeading
-          index="05"
+          index="07"
           command="connect --secure"
           title="Let's Build Together"
           description="I am open to entry-level Java developer roles and AI engineering work. If you need someone who can own the backend and connect it to real AI workflows, let's talk."

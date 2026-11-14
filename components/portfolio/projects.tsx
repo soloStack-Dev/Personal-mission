@@ -15,7 +15,7 @@ export function Projects() {
     <section id="projects" className="border-b border-line bg-background">
       <div className="mx-auto max-w-[1200px] px-6 py-20 md:px-10 md:py-24 lg:py-32">
         <SectionHeading
-          index="02"
+          index="03"
           command="projects --featured"
           title="Featured Projects"
           description="Selected work across AI-powered enterprise tooling and production business websites. Each project is built end to end — architecture, implementation, testing, and deployment."

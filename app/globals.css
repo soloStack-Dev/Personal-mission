@@ -186,6 +186,26 @@
   .animate-scroll-line {
     animation: scroll-line 2.4s cubic-bezier(0.16, 1, 0.3, 1) infinite;
   }
+
+  .animate-showreel-float {
+    animation: showreel-float 7s ease-in-out infinite;
+  }
+
+  .animate-showreel-orbit {
+    animation: showreel-orbit 20s linear infinite;
+  }
+
+  .animate-showreel-scan {
+    animation: showreel-scan 6s linear infinite;
+  }
+
+  .animate-showreel-marquee {
+    animation: showreel-marquee 26s linear infinite;
+  }
+
+  .animate-showreel-pulse {
+    animation: showreel-pulse 2.2s ease-in-out infinite;
+  }
 }
 
 @keyframes scroll-line {
@@ -197,6 +217,50 @@
   }
   100% {
     transform: translateY(280%);
+  }
+}
+
+@keyframes showreel-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, -16px, 0) rotate(8deg);
+  }
+}
+
+@keyframes showreel-orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes showreel-scan {
+  0% {
+    transform: translateY(-110%);
+  }
+  100% {
+    transform: translateY(900%);
+  }
+}
+
+@keyframes showreel-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes showreel-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(230, 57, 70, 0);
   }
 }
 

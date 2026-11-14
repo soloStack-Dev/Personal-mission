@@ -8,6 +8,7 @@ import { Process } from "@/components/portfolio/process";
 import { Projects } from "@/components/portfolio/projects";
 import { SellingPlatform } from "@/components/portfolio/selling-platform";
 import { ScrollAnimations } from "@/components/portfolio/scroll-animations";
+import { Showreel } from "@/components/portfolio/showreel";
 import { TechArsenal } from "@/components/portfolio/tech-arsenal";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <Showreel />
         <TechArsenal />
         <Projects />
         <SellingPlatform />

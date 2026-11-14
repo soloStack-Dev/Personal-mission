@@ -88,7 +88,7 @@ export function TechArsenal() {
     <section id="skills" className="border-b border-line bg-background">
       <div className="mx-auto max-w-[1200px] px-6 py-20 md:px-10 md:py-24 lg:py-32">
         <SectionHeading
-          index="01"
+          index="02"
           command="skills --list"
           title="Technical Arsenal"
           description="A backend-first toolkit for building production systems, integrating AI services, and shipping clean full-stack applications."
